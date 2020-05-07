@@ -17,12 +17,7 @@ async function test(){
   const values = "('Hay Trao Cho Anh','Son Tung MTP','Pop',1000000)";
   const condition = "singer = 'Son Tung MTP'";
   const newData = "views = 100";
-  const limits = 1;
-  await mysql.InsertNewRow(nameTable,params,values);
-  const result = await mysql.SelectData(nameTable,"*","",limits);
-  console.log(result);
-  await mysql.UpdateData(nameTable,newData,condition);
-  const result2 = await mysql.SelectData(nameTable,"*","",limits);
-  console.log(result2);
+  const limits = 2;
+  
 }
 test();

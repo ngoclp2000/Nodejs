@@ -51,7 +51,7 @@ exports.SelectData = (nameTable, field, condition,limits) => {
   // Return the result select from database
   return new Promise(resolved => {
     setTimeout(() => {
-      let sql = "SELECT " + field + " FROM " + nameTable + " " + condition + " LIMIT "+limits;
+      let sql = "SELECT " + field + " FROM " + nameTable + " WHERE " + condition + " LIMIT "+limits;
       con.query(sql, (err, result) => {
         if (err) throw err;
         console.log("Collecting data successfully");
