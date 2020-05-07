@@ -11,13 +11,14 @@ const server =  http.createServer(function (req, res) {
   res.end(data);
 });
 server.listen(3001);
-async function test(){
-  const nameTable = "song";
-  const params = "(name,singer,type,views)";
-  const values = "('Hay Trao Cho Anh','Son Tung MTP','Pop',1000000)";
-  const condition = "singer = 'Son Tung MTP'";
-  const newData = "views = 100";
-  const limits = 2;
+//Test for mysql implement
+// async function test(){
+//   const nameTable = "song";
+//   const params = "(name,singer,type,views)";
+//   const values = "('Hay Trao Cho Anh','Son Tung MTP','Pop',1000000)";
+//   const condition = "singer = 'Son Tung MTP'";
+//   const newData = "views = 100";
+//   const limits = 2;
   
-}
-test();
+// }
+// test();
